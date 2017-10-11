@@ -25,6 +25,6 @@ And that's it!
 
 I commented out a lot of the "debugging" graphs that I used just to do a sanity check on what the data should look like. The final graph however, the one that represents the number of neurons in a given cluster, is not commented out and that should appear fine when you run the program. 
 
-### Acknowledgements
+### Acknowledgements 
 
 This wouldn't have been possible without [Kaggle](https://www.kaggle.com/), as the concept for this project is directly related to a [competition they posted online](https://www.kaggle.com/c/connectomics). 
