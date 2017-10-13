@@ -19,7 +19,7 @@ These are popular machine learning libraries, so it's a must-have if you will be
 
 ### Deployment
 
-Go ahead and download ```small_sample.txt```, which is a small sample of electrical impulse data for 1000 neurons within the zebrafish brain. Then go ahead and download ```NeuronClustering.py```. Make sure that these files are both saved in the same directory or else it won't run.
+Go ahead and download ```sample_data.zip```, which is a small sample of electrical impulse data for 1000 neurons within the zebrafish brain. Then go ahead and download ```NeuronClustering.py```. Make sure that these files are both saved in the same directory or else it won't run.
 
 And that's it! 
 
