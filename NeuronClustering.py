@@ -16,8 +16,7 @@ def butter_lowpass_filter(data, cutoff, fs, order=5):
     return y
 
 
-neuron_samples = np.genfromtxt(fname='small_sample.txt', delimiter=',')
-np.savetxt('sample_data.out', X=np.reshape(neuron_samples[0:75000], (75000, 100)), delimiter=',')
+neuron_samples = np.genfromtxt(fname='sample_data.txt', delimiter=',')
 
 plt.plot(range(0, 15000), neuron_samples[:, 0][0:15000])
 plt.title('First 30 Seconds of Activity for a Neuron')
