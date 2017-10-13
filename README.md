@@ -8,7 +8,7 @@ This project takes simulated electrical impulses in the brain of a zebrafish and
 
 You're going to need to have Python installed on your computer, as well as ```pip```/```pip3``` in order to install the scipy, sklearn, matplotlib, and numpy libraries. Instructions for installing Python and pip are found [here](https://github.com/BurntSushi/nfldb/wiki/Python-&-pip-Windows-installation).
 
-Once you have Python and pip, go ahead and use pip download the following:
+Once you have Python and pip, go ahead and use pip to download the following:
 
 * sklearn
 * scipy
@@ -19,11 +19,13 @@ These are popular machine learning libraries, so it's a must-have if you will be
 
 ### Deployment
 
-Go ahead and download ```sample_data.zip```, which is a small sample of electrical impulse data for 1000 neurons within the zebrafish brain. Then go ahead and download ```NeuronClustering.py```. Make sure that these files are both saved in the same directory or else it won't run.
+Go ahead and download ```sample_data.zip```, which is a small sample of electrical impulse data for 1000 neurons within the zebrafish brain. Then go ahead and download ```NeuronClustering.py```. Make sure that the unzipped file and the Python file are both saved in the same directory or else it won't run.
 
 And that's it! 
 
-I commented out a lot of the "debugging" graphs that I used just to do a sanity check on what the data should look like. The final graph however, the one that represents the number of neurons in a given cluster, is not commented out and that should appear fine when you run the program. 
+### Notes
+
+The accompanying research paper was with a much larger dataset than the one provided here, so the results are a little different, but the logic is exactly the same.
 
 ### Acknowledgements 
 
