@@ -1,8 +1,7 @@
 import numpy as np
-from scipy.signal import butter, lfilter, freqz
 import matplotlib.pyplot as plt
+from scipy.signal import butter, lfilter, freqz
 from sklearn.cluster import KMeans
-
 
 
 def butter_lowpass(cutoff, fs, order=5):
@@ -20,15 +19,12 @@ def butter_lowpass_filter(data, cutoff, fs, order=5):
 
 
 neuron_samples = np.genfromtxt(fname='sample_data.txt', delimiter=',')
-# np.savetxt('sample_data.txt', X=np.reshape(neuron_samples[0:25000], (25000, 100)), delimiter=',')
 
-"""
 plt.plot(range(0, 15000), neuron_samples[:, 0][0:15000])
 plt.title('First 30 Seconds of Activity for a Neuron')
 plt.xlabel('Time (s)')
 plt.ylabel('Florescence Level')
 plt.show()
-"""
 
 sample_rate = 2 * len(neuron_samples)  # sample rate is twice the bandwidth
 order = 4
@@ -70,7 +66,6 @@ plt.ylabel('Florescence Level')
 plt.xlabel('Time (s)')
 plt.show()
 
-
 n_clusters = 19
 kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(neuron_signals)
 neuron_clusters = kmeans.labels_
@@ -82,4 +77,3 @@ plt.xlabel('Cluster')
 plt.ylabel('Number of Neurons')
 plt.title('Number of Neurons that Fall into a Specific Cluster')
 plt.show()
-
